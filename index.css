@@ -103,21 +103,35 @@ body {
 }
 
 @media (min-width: 1440px) {
+
   .card {
-    border: 3px solid black;
-  }
-  .card {
-    min-width: 800px;
-    min-height: 60%;
+    min-width: 700px;
     display: flex;
     flex-flow: row;
   }
 
   .card > img {
     width: 50%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .img-container {
+    width: 50%;
+    background-color: black;
+
+    width: 100%;
+    background-image: url( './images/image-product-mobile.jpg');
+    background-size: none;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    width: 50%;
+    background-size: cover;
+    background-position: center;
   }
 
   .card__details {
     width: 50%;
+    overflow: auto;
   }
 }
