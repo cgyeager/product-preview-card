@@ -31,6 +31,7 @@ body {
 
   border-radius: 1rem;
   width: 90%;
+  max-width: 600px;
   overflow: hidden;
   display: flex;
   flex-flow: column wrap;
@@ -101,8 +102,22 @@ body {
   padding-right: 1rem;
 }
 
-@media (min-width: 850px) {
+@media (min-width: 1440px) {
   .card {
     border: 3px solid black;
+  }
+  .card {
+    min-width: 800px;
+    min-height: 60%;
+    display: flex;
+    flex-flow: row;
+  }
+
+  .card > img {
+    width: 50%;
+  }
+
+  .card__details {
+    width: 50%;
   }
 }
