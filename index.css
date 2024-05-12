@@ -42,6 +42,13 @@ body {
 .card > img {
   width: 100%;
 }
+#img-desktop {
+  display: none;
+}
+#img-mobile {
+  display: block;
+  width: 100%;
+}
 
 .card__details {
   background-color: var(--White);
@@ -106,29 +113,21 @@ body {
 
   .card {
     min-width: 700px;
+    max-height: 410px;
     display: flex;
     flex-flow: row;
   }
+.img-wrapper {
+  width: 50%;
+}
 
-  .card > img {
-    width: 50%;
-    object-fit: cover;
-    object-position: center;
-  }
-  .img-container {
-    width: 50%;
-    background-color: black;
-
-    width: 100%;
-    background-image: url( './images/image-product-mobile.jpg');
-    background-size: none;
-    background-position: center;
-    background-repeat: no-repeat;
-
-    width: 50%;
-    background-size: cover;
-    background-position: center;
-  }
+#img-desktop {
+  display: block;
+  width: 100%;
+}
+#img-mobile {
+  display: none;
+}
 
   .card__details {
     width: 50%;
