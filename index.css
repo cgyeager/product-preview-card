@@ -29,12 +29,12 @@ body {
 .card {
   margin: 0 auto;
 
-  border: 1px solid black;
   border-radius: 1rem;
   width: 90%;
   overflow: hidden;
   display: flex;
   flex-flow: column wrap;
+  font-family: 'Montserrat';
 }
 
 .card > img {
@@ -42,13 +42,14 @@ body {
 }
 
 .card__details {
-  border: 1px solid green;
   background-color: var(--White);
   padding: 1rem;
 }
 
 .card__details > h3 {
-  font-family: 'Montserrat';
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .card__details > h1 {
@@ -73,6 +74,7 @@ body {
   color: var(--Dark-grayish-blue);
   font-size: calc(var(--Font-size));
   font-weight: bold;
+  text-decoration: line-through;
 }
 
 .card__details > button {
