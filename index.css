@@ -1,0 +1,99 @@
+:root {
+
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+
+
+--Font-size: 14px;
+}
+
+body {
+  background-color: var(--Cream);
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--Font-size);
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.card {
+  margin: 0 auto;
+
+  border: 1px solid black;
+  border-radius: 1rem;
+  width: 90%;
+  overflow: hidden;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.card > img {
+  width: 100%;
+}
+
+.card__details {
+  border: 1px solid green;
+  background-color: var(--White);
+  padding: 1rem;
+}
+
+.card__details > h3 {
+  font-family: 'Montserrat';
+}
+
+.card__details > h1 {
+  font-family: 'Fraunces';
+}
+
+.card__details > p {
+  color: var(--Dark-grayish-blue)
+}
+
+.card__details > .price {
+  color: var(--Dark-cyan);
+  font-size: calc(var(--Font-size) * 2);
+  font-weight: bold;
+  padding: 1rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+}
+
+.card__details > .price > span {
+  padding-left: 1.5rem;
+  color: var(--Dark-grayish-blue);
+  font-size: calc(var(--Font-size));
+  font-weight: bold;
+}
+
+.card__details > button {
+  background-color: var(--Dark-cyan);
+  border: none;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+  color: var(--White);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__details > button > img {
+  padding-right: 1rem;
+}
+
+@media (min-width: 850px) {
+  .card {
+    border: 3px solid black;
+  }
+}
